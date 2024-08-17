@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Phishing Report</title>
+</head>
+<body>
+    <h1>Phishing Response Report</h1>
+    <table>
+        <thead>
+            <tr>
+                <th>Department</th>
+                <th>Responses</th>
+            </tr>
+        </thead>
+        <tbody>
+            {% for item in report_data %}
+            <tr>
+                <td>{{ item.department }}</td>
+                <td>{{ item.responses }}</td>
+            </tr>
+            {% endfor %}
+        </tbody>
+    </table>
+</body>
+</html>
